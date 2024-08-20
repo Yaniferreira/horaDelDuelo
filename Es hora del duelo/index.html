@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Cartas</h1>
+        
+        <div id="game-board">
+            <div id="player1-board">
+                <h2>Jugador 1</h2>
+                <button onclick="convocarUnidad('player1')">Convocar Ninja Cinturón Rojo</button>
+                <button onclick="jugarEfecto('algoritmoDificil', 'player1')">Jugar Algoritmo Difícil</button>
+                <button onclick="jugarEfecto('programacionEnPareja', 'player1')">Jugar Programación en Pareja</button>
+                <div id="player1-unidad"></div>
+            </div>
+
+            <div id="player2-board">
+                <h2>Jugador 2</h2>
+                <button onclick="convocarUnidad('player2')">Convocar Ninja Cinturón Negro</button>
+                <button onclick="jugarEfecto('rechazoDePromesa', 'player2')">Jugar Rechazo de Promesa</button>
+                <div id="player2-unidad"></div>
+            </div>
+        </div>
+
+        <button onclick="atacar()">Atacar</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
